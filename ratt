@@ -42,14 +42,9 @@ done
 refembl=$1
 query=$2
 
-if [ -z "$RATT_HOME" ]; then
- echo "Please set the RATT_HOME variable."
- echo "At Sanger for bash it is RATT_HOME=/nfs/users/nfs_t/tdo/Bin/ratt; export RATT_HOME"
- echo "At Sanger for tcsh setenv RATT_HOME /nfs/users/nfs_t/tdo/Bin/"
-
- echo "I will use the sanger default!"
-RATT_HOME=/nfs/users/nfs_t/tdo/Bin/ratt; export RATT_HOME
-fi;
+# Set RATT_HOME to the directory containing this script
+# https://stackoverflow.com/a/246128
+export RATT_HOME="$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd )"
 
 ### parameter of nucmer
 D=5

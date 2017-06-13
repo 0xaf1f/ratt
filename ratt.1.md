@@ -8,7 +8,6 @@ ratt - genome annotation transfer
 
 # SYNOPSIS
 
-RATT_HOME=/path/to/RATT \\ \
 **ratt** \\ \
 {**-p**|**--prefix**} *result-prefix* \\ \
 {**-t**|**--type**} *transfer-type* \\ \
@@ -82,10 +81,6 @@ RATT_HOME=/path/to/RATT \\ \
      **IMPORTANT**: The fasta sequence header names must exactly match the corresponding EMBL annotation files.
 
 # ENVIRONMENT
-
-**RATT_HOME**
-:    Path to the **ratt** source directory.
-     This variable must be set for the program to function.
 
 **RATT_CONFIG**
 :    Path to a custom configuration file to use.
