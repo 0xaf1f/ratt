@@ -53,7 +53,6 @@ fi;
 
 ### parameter of nucmer
 D=5
-NUCMER_PATH=$PAGIT_HOME/bin/;
 
 ## check that required arguments are passed
 if [ -z "$refembl" ] \
